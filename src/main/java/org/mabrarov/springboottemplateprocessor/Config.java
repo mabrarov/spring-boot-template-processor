@@ -4,16 +4,16 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties("processor")
+@ConfigurationProperties(Main.CONFIG_OPTION_NAME_PREFIX)
 public class Config {
 
-  private String name;
+  private String option;
 
-  public String getName() {
-    return name;
+  public String getOption() {
+    return option;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setOption(String option) {
+    this.option = option;
   }
 }

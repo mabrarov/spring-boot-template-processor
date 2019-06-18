@@ -1,6 +1,2 @@
-spring:
-  main:
-    banner-mode: 'off'
-
-processor:
-  name: 'world'
+template-processor:
+  option: 'builtin'
